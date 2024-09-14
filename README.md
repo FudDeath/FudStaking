@@ -36,7 +36,7 @@ The `FUD::Staking` module provides a secure and efficient way for users to stake
 #### Stake
 
 Represents the staking information for each user.
-
+```move
 struct Stake has key, store {
     amount: u64,          // Amount of FUD staked
     stake_time_ms: u64,   // Timestamp when the stake was made (in ms)
@@ -94,7 +94,6 @@ struct APYChangedEvent has copy, drop, store {
     old_apy: u64,
     new_apy: u64,
 }
-
 
 
 Public Entry Functions
